@@ -36,3 +36,25 @@ Learning React with Web Dev Simplified (https://www.youtube.com/watch?v=Rh3tobg7
 - to get started, delete App.css, assets, public
 ![alt text](image-2.png)
 
+## React basic structure
+- hooks: functions that allow you to reuse stateful logic
+  - there are 15 hooks in React version 18
+- helper functions
+- return value (what to display)
+
+- HOOKS:
+  1. useCallback
+  2. useContext
+  3. useDebugValue
+  4. useDeferredValue
+  5. useEffect
+  6. useId
+  7. useImperativeHandle
+  8. useInsertionEffect
+  9. useLayoutEffect
+  10. useMemo
+  11. useReducer
+  12. useRef
+  13. useState
+  14. useSyncExternalStore
+  15. useTransition
