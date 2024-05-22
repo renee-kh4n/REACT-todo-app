@@ -9,5 +9,8 @@ Learning React with Web Dev Simplified (https://www.youtube.com/watch?v=Rh3tobg7
 - html looking code is called jsx
 
 ## Plan your UI
-- breakdown your code into components like text, video, image
-- combine into one app
+1. breakdown your code into components like text, video, image, then combine into one app
+2. I want my app to look like this
+    *Think about making a sandwich*
+    - get a list of ingredients
+    - list the instructions
