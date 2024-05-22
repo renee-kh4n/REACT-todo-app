@@ -24,9 +24,11 @@ body {
 }
 
 .btn {
-  background: hsla(314, 100%, 50%, 0.1);
+  background: hsl(308, 100%, 72%);
   border: 1px solid hsl(308, 100%, 50%);
-  color: hsl(308, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bolder;
+  letter-spacing: 2px;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
   cursor: pointer;
@@ -35,7 +37,8 @@ body {
 
 .btn:hover,
 .btn:focus-visible {
-  background: white;
+  background: hsl(308, 100%, 84%);
+  color: hsl(309, 100%, 31%);
 }
 
 .btn.btn-danger {
@@ -51,8 +54,8 @@ body {
 
 .new-item-form input {
   outline: none;
-  border: 1px solid hsl(308, 100%, 40%);
-  background: hsl(308, 100%, 72%);
+  border: 1px solid hsl(308, 100%, 87%);
+  background: hsl(309, 100%, 93%);
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
   color: black;
