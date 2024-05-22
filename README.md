@@ -13,4 +13,22 @@ Learning React with Web Dev Simplified (https://www.youtube.com/watch?v=Rh3tobg7
 2. I want my app to look like this<br>
     *Think about making a sandwich*
     - get a list of ingredients
-    - list the instructions
+    - list the instructions<br>
+    *Go to a shop, ask for a sandwich*
+    - this is the react way of thinking
+
+## Set up
+- npm create vite@latest
+- ? Project name: » vite-project (replace w period)
+- framework: React
+- variant: JavaSript + SWC
+![](image.png)
+![](image-1.png)
+- index.html is where our script tag is imported
+
+- in src > assets > main.jsx
+  - hooks our html with react code
+  - everything inside the app is rendered in <div id="root">
+
+- in src > assets > App.jsx
+    - function that starts w capital letter is a component (ex. function App(){})
