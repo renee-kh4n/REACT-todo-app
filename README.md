@@ -10,7 +10,7 @@ Learning React with Web Dev Simplified (https://www.youtube.com/watch?v=Rh3tobg7
 
 ## Plan your UI
 1. breakdown your code into components like text, video, image, then combine into one app
-2. I want my app to look like this
+2. I want my app to look like this<br>
     *Think about making a sandwich*
     - get a list of ingredients
     - list the instructions
