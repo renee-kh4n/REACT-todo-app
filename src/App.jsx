@@ -1,30 +1,18 @@
 import { useState } from "react"
 import "./styles.css"
+import { NewTodoForm } from "./Form";
 
 export default function App(){
-  // return "Hello World"
-
-  //default value //immutable, can't redeclare
-  const [newItem, setNewItem] = useState("")
-  //setNewItem("blahblah") will cause an infinite loop// reloads the whole app everytime it encounters this update
-
-  const [todos, setTodos] = useState([]);
-  //rerender the app every time we have a new input/TODOs; place them inside of useState()
-
-  // cannot return more than one element
-  //solution: wrap content in a fragment <></>
   
-  function handleSubmit(e){
-    e.preventDefault(); //prevents refreshing the page
+  const [todos, setTodos] = useState([]);
 
+  function addTodo(title){
     setTodos(currentTodoList =>  {
       return [...currentTodoList, 
         {id: crypto.randomUUID(), 
-          title: newItem, 
+          title, 
           completed: false}]
     })
-
-    setNewItem("")
   }
 
   function toggleTodo(id, completed){
@@ -46,17 +34,9 @@ export default function App(){
       )
   }
 
-  return <><form onSubmit={handleSubmit} className="new-item-form">
-  <div className="form-row">
-    <label htmlFor="item">New Item</label>
-    {/* onChange allows you to type on the input field */}
-    <input 
-    value={newItem} 
-    onChange={e => setNewItem(e.target.value) } type="text" 
-    id="item"/>
-  </div>
-  <button className="btn">Add</button>
-</form>
+  return <>
+  {/* addTodo={addTodo} is referred to as a prop to add functionality to the element*/}
+<NewTodoForm addTodo={addTodo}/>
 <h1 className="header">My To Do List</h1>
 <ul className="list">
   {/* everything inside {} is ran as a JS code */
