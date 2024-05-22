@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function NewTodoForm(){
+export function NewTodoForm({onSubmit}){ //Alt: NewTodoForm(props)
 
     const [newItem, setNewItem] = useState("")
   
@@ -17,7 +17,7 @@ export function NewTodoForm(){
         //       title: newItem, 
         //       completed: false}]
         // })
-        addTodo(newItem)
+        onSubmit(newItem) //Alt: props.onSubmit(newItem)
     
         setNewItem("")
       }
