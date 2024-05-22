@@ -32,3 +32,6 @@ Learning React with Web Dev Simplified (https://www.youtube.com/watch?v=Rh3tobg7
 
 - in src > assets > App.jsx
     - function that starts w capital letter is a component (ex. function App(){})
+
+- to get started, delete App.css, assets, public
+![alt text](image-2.png)
